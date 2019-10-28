@@ -25,13 +25,6 @@ body {
     text-align: center;
     transition: background 0.5s;
 }
-
-/*
-.video1 {
-    display: inline-block; width: auto !important; max-width: 100%; height: auto !important;
-}
-*/
-
 #main_header:hover {
     background: #181818;
     
@@ -46,6 +39,10 @@ body {
     justify-content: space-between;
 }
 .logo {
+    position: absolute;
+    width: 20%;
+}
+.logo_1 {
     width: 200px;
     display: block;
     margin-right: 0;
@@ -271,7 +268,7 @@ body {
     display: block;
     width: 35%;
     top: 110px;
-    right: -27%;
+    right: -30%;
 }
 .menu_watch_list ul li a{
     display: block;
@@ -290,7 +287,7 @@ body {
 }
 .menu_watch_select a {
     position: absolute;
-    top: 430px;
+    top: 83%;
     left: 45%;
     font-size: 9px;
     line-height: 1;
@@ -371,7 +368,7 @@ form.example::after {
 }
 .box_bar1 {
     position: absolute;
-    top: 900px;
+    bottom: 10%;
     left: 15%;
     background-color: #fff;
     height: 6px;
@@ -388,7 +385,7 @@ form.example::after {
 
 .box_bar2 {
     position: absolute;
-    top: 900px;
+    bottom: 10%;
     right: 15%;
     background-color: #fff;
     height: 6px;
@@ -404,7 +401,7 @@ form.example::after {
                     100%{width: 30%; background: #128000;}}
 .slide-bottom {
     position: absolute;
-    top: 870px;
+    bottom: 9%;
     left: 49%;
     z-index: 9;
     width: 45px;
@@ -417,6 +414,11 @@ form.example::after {
 @media all and (min-width:740px) and (max-width:1023px){
     .header_central {
         width: auto;
+    }
+    .slide-bottom {
+        bottom: 10%; 
+        left: 48%;
+        width: 35px;
     }
     .menu {
         display: none;
@@ -435,7 +437,8 @@ form.example::after {
         display: block;
     }
     .icon_menu {
-        width: 120px;
+        width: 110px;
+        float: right;
     }
     .icon_mytag:after {
         background-image: none;
@@ -451,6 +454,7 @@ form.example::after {
         display: block;
     }
     .header_right {
+        width: 100%;
         position: relative;
         right: -30px;
     }
@@ -494,6 +498,7 @@ form.example::after {
         position: absolute;
         top: 0;
         right: 0;
+        z-index: 10;
     }
     .sub_menu_icon2::after {
         background: url(../img/iconfinder_location.png) right center no-repeat;
@@ -570,9 +575,9 @@ form.example::after {
         width: auto;
     }
     .slide-bottom {
-        top: 880px;
+        bottom: 10%; 
         left: 48%;
-        width: 30px;
+        width: 25px;
     }
     .menu {
         display: none;
@@ -600,17 +605,20 @@ form.example::after {
     }
     .icon_menu {
         width: 80px;
+        margin: 0;
     }
     .icon_mytag:after {
         background-image: none;
     }
-    .icon_mytag {display:none;}
+    .icon_mytag {display:none;
+    }
     .sub_search {
         top: 50px;
     }
     .header_right {
+        width: 100%;
         position: relative;
-        right: -30px;
+        margin-left: 88%;
     }
     #main_header {
         height: 50px;
@@ -625,8 +633,6 @@ form.example::after {
         top: 50px;
         background: #fff;
     }
-    
-    
     .sub_menu_nav {
         padding-bottom: 20px;
         padding-top: 20px;
@@ -714,27 +720,6 @@ form.example::after {
       -o-transform: translateY(-8px) rotate(-45deg);
       transform: translateY(-8px) rotate(-45deg);
     }
-
-/*
-    .box_bar2 {
-        display: none;
-    }
-    .box2 {
-        display: none;
-    }
-    .box_bar1 {
-        width: 350px;
-    }
-    .box1 {
-        width: 350px;
-        animation: ani2 30s infinite; background: #fff;
-    }
-    @keyframes ani2{0%{width: 0;background: #128000;}100%{width: 350px; background: #128000;}}
-    }
-    @web-kit-keyframes ani2{0%{width: 0;background: #128000;}100%{width: 350px; background: #128000;}}
-    }
-*/
-    
     
     
 }

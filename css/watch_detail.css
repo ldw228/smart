@@ -36,13 +36,16 @@ body {
 }
 
 .logo {
+    position: absolute;
+    width: 20%;
+}
+.logo_1 {
     width: 200px;
     display: block;
     margin-right: 0;
     vertical-align: middle;
     box-sizing: border-box;
 }
-
 .logo_2 {
     width: 110px;
     display: none;
@@ -571,7 +574,7 @@ form.example::after {
     }
 
     .icon_menu {
-        width: 120px;
+        width: 110px;
     }
 
     .icon_mytag:after {
@@ -587,10 +590,10 @@ form.example::after {
     }
 
     .header_right {
+        width: 100%;
         position: relative;
-        right: -30px;
+        margin-left: 90%;
     }
-
     #main_header {
         height: 50px;
         background: #181818;
@@ -711,11 +714,15 @@ form.example::after {
     }
 
     .dt_item {
-        width: 1000px;
+        width: 100%;
+        
+        
     }
 
     .dt_all {
-        width: 40%;
+        width: 49%;
+        padding: 5% 15%;
+        
     }
 
     #dt_box {
@@ -784,13 +791,16 @@ form.example::after {
     }
 
     .header_right {
+        width: 100%;
         position: relative;
-        right: -30px;
+        margin-left: 88%;
     }
-
     #main_header {
         height: 50px;
         background: #181818;
+    }
+    .dt_item {
+        width: 100%;
     }
 
     .sub_menu_wrap {
@@ -917,15 +927,13 @@ form.example::after {
     }
 
     .dt_all {
-        width: 35%;
+        width: 49%;
     }
 
     #dt_box {
         margin-top: 14px;
     }
 
-    .dt_box4 {
-        margin-top: 14px;
-    }
+    
 
 }

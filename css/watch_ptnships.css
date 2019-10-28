@@ -36,13 +36,16 @@ body {
 }
 
 .logo {
+    position: absolute;
+    width: 20%;
+}
+.logo_1 {
     width: 200px;
     display: block;
     margin-right: 0;
     vertical-align: middle;
     box-sizing: border-box;
 }
-
 .logo_2 {
     width: 110px;
     display: none;
@@ -147,7 +150,6 @@ body {
     position: relative;
     border: none;
 }
-
 .icon_search:after {
     background-image: url(../img/search.png);
     content: " ";
@@ -485,8 +487,7 @@ form.example::after {
     justify-content: space-between;
     list-style: none;
     max-width: 1200px;
-    margin: 20px auto 0;
-    padding: 0 2.5%;
+    padding: 1% 2.5%;
     text-transform: uppercase;
     text-align: center;
 }
@@ -550,7 +551,7 @@ form.example::after {
 .footer {
     background: #000;
     position: relative;
-    top: 550px;
+    top: 400px;
     text-align: center;
 }
 
@@ -635,15 +636,18 @@ form.example::after {
     }
 
     .header_right {
+        width: 100%;
         position: relative;
-        right: -30px;
+        margin-left: 90%;
     }
-
     #main_header {
         height: 50px;
         background: #181818;
     }
-
+    .ftn_img img:hover {
+        transform: none;
+    }
+    
     .sub_menu_wrap {
         display: block;
         position: absolute;
@@ -809,13 +813,18 @@ form.example::after {
         top: 50px;
     }
     .header_right {
+        width: 100%;
         position: relative;
-        right: -30px;
+        margin-left: 88%;
     }
     #main_header {
         height: 50px;
         background: #181818;
     }
+    .ftn_img img:hover {
+        transform: none;
+    }
+    
     .sub_menu_wrap {
         display: block;
         position: absolute;

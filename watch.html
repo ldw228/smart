@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>CSS5</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../watch/css/reset.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/watch.css">
-    <script src="js/prefixfree.min.js"></script>
-    <script src="../watch/js/jquery-3.3.1.min.js"></script>
     <!--    <script src="js/jquery.vide.min.js"></script>-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -98,11 +98,11 @@
     <div id="container" style="width: 100%; height: 100%">
         <div class="swiper-container" style="width: 100%; height: 100%">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" data-vide-bg="video/galaxy watch" style="width: 100%; height: 100%">
+                <div class="swiper-slide" data-vide-bg="video/galaxy_watch" style="width: 100%; height: 100%">
                     <script src="js/jquery-3.3.1.min.js"></script>
                     <script src="js/jquery.vide.js"></script>
                 </div>
-                <div class="swiper-slide box" data-vide-bg="video/apple watch">
+                <div class="swiper-slide box" data-vide-bg="video/apple_watch">
                 </div>
             </div>
         </div>
@@ -111,7 +111,7 @@
             </div>
         </div>
         <div class="slide-bottom">
-            <img src="../watch/img_1/slide-bottom.png" alt="">
+            <img src="img_1/slide-bottom.png" alt="">
         </div>
         <div class="box_bar2">
             <div class="box2">
@@ -149,12 +149,6 @@
         </script>
         <header id="main_header">
             <div class="head_boxing">
-                <div class="logo">
-                    <a href="file:///D:/%EC%8B%A4%EC%8A%B5/watch/watch.html">
-                        <img class="logo_1" src="../watch/img/logo.png" alt="logo"></a>
-                    <a href="file:///D:/%EC%8B%A4%EC%8A%B5/watch/watch.html">
-                        <img class="logo_2" src="img/logo_2.png" alt=""></a>
-                </div>
                 <div class="three col">
                     <div class="hamburger" id="hamburger-1">
                         <span class="line"></span>
@@ -162,26 +156,30 @@
                         <span class="line"></span>
                     </div>
                 </div>
-
                 <div class="header_central">
                     <nav class="mainnav">
                         <ul class="menu">
-                            <li class="watch"><a href="#">시계</a>
+                            <li class="watch"><a href="">시계</a>
                             </li>
-                            <li class="partner"><a href="C:/HTML/project/watch/watch_ptnships.html">파트너십</a>
+                            <li class="partner"><a href="watch_ptnships.html">파트너십</a>
                             </li>
-                            <li class="news"><a href="C:/HTML/project/watch/watch_news.html">뉴스</a></li>
+                            <li class="news"><a href="watch_news.html">뉴스</a></li>
                             <li class="store"><a href="#">매장</a></li>
                             <li class="customer"><a href="#">고객서비스</a></li>
                         </ul>
                     </nav>
-
+                </div>
+                <div class="logo">
+                    <a href="watch.html">
+                        <img class="logo_1" src="img/logo.png" alt="logo"></a>
+                    <a href="watch.html">
+                        <img class="logo_2" src="img/logo_2.png" alt=""></a>
                 </div>
                 <div class="header_right">
                     <div class="icon_menu">
                         <div class="nav_language">
                             <button class="icon icon_language">
-                                <span class="icon icon_kr"><img src="../watch/img/kr.PNG" alt=""></span>
+                                <span class="icon icon_kr"><img src="img/kr.PNG" alt=""></span>
                                 <span class="tip">언어</span>
                             </button>
                         </div>
@@ -200,9 +198,9 @@
             </div>
             <div class="sub_menu_wrap">
                 <ul class="sub_menu_nav">
-                    <li><a class="sub_menu_icon sub_menu_icon1" href="">시계</a></li>
-                    <li><a class="sub_menu_icon sub_menu_icon1" href="">파트너십</a></li>
-                    <li><a class="sub_menu_icon sub_menu_icon1" href="">뉴스</a></li>
+                    <li><a class="sub_menu_icon sub_menu_icon1" href="watch_detail.html">시계</a></li>
+                    <li><a class="sub_menu_icon sub_menu_icon1" href="watch_ptnships.html">파트너십</a></li>
+                    <li><a class="sub_menu_icon sub_menu_icon1" href="watch_news.html">뉴스</a></li>
                     <li><a class="sub_menu_icon sub_menu_icon2" href="">매장</a></li>
                     <li><a class="sub_menu_icon sub_menu_icon1" href="">고객서비스</a></li>
                     <li><a class="sub_menu_icon sub_menu_icon3" href="">마이 스마트워치</a></li>
@@ -216,10 +214,10 @@
             </div>
             <div class="sub_login">
                 <ul class="nav">
-                    <li class="sub_log"><a href="C:/HTML/project/watch/watch_login.html">
+                    <li class="sub_log"><a href="watch_login.html">
                             로그인
                         </a></li>
-                    <li class="sub_signup"><a href="file:///C:/HTML/project/watch/watch_signup.html">
+                    <li class="sub_signup"><a href="watch_signup.html">
                             마이 스마트워치 가입
                         </a></li>
                     <li><a href="#">
@@ -231,48 +229,48 @@
                 </ul>
             </div>
             <div class="sub_back">
-                <img src="../watch/img/back_sub_nav.png" alt="">
+                <img src="img/back_sub_nav.png" alt="">
                 <div class="menu_watch_container">
                     <h3>스마트 워치</h3>
                     <div class="menu_watch_select">
-                        <a href="C:/HTML/project/watch/watch_detail.html">모든 시계 보기</a>
+                        <a href="watch_detail.html">모든 시계 보기</a>
                     </div>
                     <div class="sub_galaxy">
                         <div class="menu_watch_selection">
                             <ul class="menu_watch_seletction_list">
                                 <li>
                                     <a href="#">
-                                        <img src="../watch/img/galaxy%20watch_1.png" alt="">
+                                        <img src="img/galaxy-watch_1.png" alt="">
                                         <span>Aqua Black</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="../watch/img/galaxy%20watch_2.png" alt="">
+                                        <img src="img/galaxy-watch_2.png" alt="">
                                         <span>Pink Gold</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="../watch/img/galaxy%20watch_3.png" alt="">
+                                        <img src="img/galaxy-watch_3.png" alt="">
                                         <span>Cloud Silver</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="../watch/img/galaxy%20watch_4.png" alt="">
+                                        <img src="img/galaxy-watch_4.png" alt="">
                                         <span>Midnight Black</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="../watch/img/galaxy%20watch_5.png" alt="">
+                                        <img src="img/galaxy-watch_5.png" alt="">
                                         <span>46㎜ Silver</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="../watch/img/galaxy%20watch_6.png" alt="">
+                                        <img src="img/galaxy-watch_6.png" alt="">
                                         <span>Rose Gold</span>
                                     </a>
                                 </li>
@@ -284,38 +282,38 @@
                             <ul class="menu_watch_seletction_list menu_watch_seletction_apple">
                                 <li>
                                     <a href="#">
-                                        <img src="../watch/img/apple%20watch_1.png" alt="">
+                                        <img src="img/apple-watch_1.png" alt="">
                                         <span>apple watch</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="../watch/img/apple%20watch_2.png" alt="">
+                                        <img src="img/apple-watch_2.png" alt="">
                                         <span>apple sport</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="../watch/img/apple%20watch_3.png" alt="">
+                                        <img src="img/apple-watch_3.png" alt="">
                                         <span>apple edition</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="../watch/img/apple%20watch_4.png" alt="">
+                                        <img src="img/apple-watch_4.png" alt="">
                                         <span>apple watch5 orange</span>
 
                                     </a>
                                 </li>
                                 <li class="apple_blue">
                                     <a href="#">
-                                        <img src="../watch/img/apple%20watch_5.png" alt="">
+                                        <img src="img/apple-watch_5.png" alt="">
                                         <span>apple watch5 blue</span>
                                     </a>
                                 </li>
                                 <li class="apple_pink">
                                     <a href="#">
-                                        <img src="../watch/img/apple%20watch_6.png" alt="">
+                                        <img src="img/apple-watch_6.png" alt="">
                                         <span>apple watch5 pink</span>
                                     </a>
                                 </li>
