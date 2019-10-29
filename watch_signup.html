@@ -5,7 +5,7 @@
     <title>CSS5</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/watch_signup.css">
+    <link rel="stylesheet" href="css/watch_login.css">
     <script src="js/prefixfree.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -47,7 +47,6 @@
                     $(".back-img").css("display", "none");
                     isOn = false;
                 }
-//                $(".back-img").css("background-color", "rgba(0,0,0,0.3)");
             });
             
             var is = false;
@@ -59,7 +58,32 @@
                     $(".sub_menu_wrap").stop().animate({left:"-100%"},500);  
                     is = false;
                 }
+                
                 $(this).toggleClass("is-active");
+            });
+            
+           
+            $(".join_list").hide().delay(50).slideDown(1000);
+            $(".BTN_join").delay(10000).addClass("on");
+            $(".login_list").hide(); 
+            
+            
+          
+            
+            $(".BTN_login").click(function(e){
+                e.preventDefault();
+                $(".login_list").slideToggle();
+                $(".BTN_login").toggleClass("on");
+                $(".BTN_join").removeClass("on");
+                $(".join_list").slideUp();
+            });
+            
+            $(".BTN_join").click(function(e){
+                e.preventDefault();
+                $(".join_list").slideToggle();
+                $(".BTN_join").toggleClass("on");
+                $(".BTN_login").removeClass("on");
+                $(".login_list").slideUp();
             });
 
         });
@@ -71,12 +95,6 @@
     <div id="container">
         <header id="main_header">
             <div class="head_boxing">
-                <div class="logo">
-                    <a href="watch.html">
-                    <img class="logo_1" src="img/logo.png" alt="logo"></a>
-                    <a href="watch.html">
-                    <img class="logo_2" src="img/logo_2.png" alt="logo2"></a>
-                </div>
                 <div class="three col">
                     <div class="hamburger" id="hamburger-1">
                       <span class="line"></span>
@@ -98,6 +116,12 @@
                            <li class="customer"><a href="#">고객서비스</a></li>
                        </ul>
                     </nav>
+                </div>
+                <div class="logo">
+                    <a href="watch.html">
+                    <img class="logo_1" src="img/logo.png" alt="logo"></a>
+                    <a href="watch.html">
+                    <img class="logo_2" src="img/logo_2.png" alt="logo"></a>
                 </div>
             </div>
             <div class="sub_menu_wrap">
@@ -219,57 +243,81 @@
                                          </div>
                                      </div>
                             </div>
-                </div>
+                </div>    
+    </div>
     <div class="login_content">
        <div class="back-img"><img src="img/back_img.png" alt=""></div>
         <div class="container">
             <div class="row1">
-                <div class="col_sm_22">
-                    <a href="file:///C:/HTML/project/watch/watch.html" class="map">Home > </a>
-                    <p class="map">My Smart Watch > </p>
-                    <p class="map">Login</p>
-                </div>
+                <a href="watch.html" class="map">Home > </a>
+                <p class="map">My Smart Watch > </p>
+                <p class="map">Login</p>
             </div>
             <div class="row2">
-                <div class="col_md_22">
-                    <h1>마이 스마트워치에 오신 것을 환영합니다.</h1>
-                    <p class="subtitle">마이 스마트워치에 가입하여 편리한 기능 및 장점 이용하기</p>
-                </div>
+                <h1>마이 스마트워치에 오신 것을 환영합니다.</h1>
+                <p class="subtitle">마이 스마트워치에 가입하여 편리한 기능 및 장점 이용하기</p>
             </div>
             <div class="row3">
-                <div class="col_sm_10">
-                    <h3>계정 만들기</h3>
-                    <p class="email">아래의 양식을 작성하여 계정을 만드십시오.</p>
-                    <form  id="fm1"action="">
-                        <div class="wrapper" style="display: block;">
-                            <label for="firstname">성*</label>
-                            <div class="row">
-                                <input id="firstname" tabindex="1" type="name" accesskey="u" value size="25" autocomplete="off">
+                <div class="login_box">
+                        <h3>기존 회원</h3>
+                        <p class="email">이메일 주소 및 비밀번호를 입력하여 계정에 로그인 하십시오.</p>
+                        <form  id="fm1"action="">
+                            <div class="wrapper login_list" style="display: block;">
+                                <label for="username">이메일 주소*</label>
+                                <div class="row">
+                                    <input id="username" tabindex="1" type="email" accesskey="u" value size="25" autocomplete="off">
+                                </div>
+                                <label for="password">비밀번호*</label>
+                                <div class="row">
+                                    <input id="password" tabindex="2" type="password" value size="25" autocomplete="off">
+                                </div>
+                                <div class="clearfix">
+                                    <p class="pull_left">* 필수필드</p>
+                                    <p class="pull_right"><a href="#">비밀번호 찾기</a></p>
+                                </div>
+                                <label for="rememberMe">
+                                    <input type="checkbox" name="rememberMe" id="rememberMe" value="true" >
+                                    <p class="rm">Remember Me</p>
+                                </label>
                             </div>
-                            <label for="lastname">이름*</label>
-                            <div class="row">
-                                <input id="lastname" tabindex="2" type="name" value size="25" autocomplete="off">
+                            <button type="submit" class="btlogin BTN_login">마이 스마트 워치에 로그인</button>
+                        </form>
+                    </div>
+                    <div class="signup_box">
+                        <h3>계정 만들기</h3>
+                        <p class="email">아래의 양식을 작성하여 계정을 만드십시오.</p>
+                        <form  id="fm1"action="">
+                            <div class="wrapper join_list" style="display: block;">
+                                <label for="firstname">성*</label>
+                                <div class="row">
+                                    <input id="firstname" tabindex="1" type="name" accesskey="u" value size="25" autocomplete="off">
+                                </div>
+                                <label for="lastname">이름*</label>
+                                <div class="row">
+                                    <input id="lastname" tabindex="2" type="name" value size="25" autocomplete="off">
+                                </div>
+                                <label for="emailad">이메일 주소*</label>
+                                <div class="row">
+                                    <input id="emailad" tabindex="1" type="email" accesskey="u" value size="25" autocomplete="off">
+                                </div>
+                                <label for="country">국가*</label>
+                                <div class="row">
+                                    <input id="country" tabindex="2" type="country" value size="25" autocomplete="off">
+                                </div>
+                                <div class="clearfix">
+                                    <p class="pull_left">* 필수필드</p>
+                                </div>
+                                <label for="signup_terms_">
+                                    <input type="checkbox" name="signup_terms" id="signup_terms" value="true" >
+                                    <p class="terms">스마트워치 이용 약관과 개인정보 처리 방침에 동의하시면 체크해 주십시오. 개인정보의 처리(정보의 사용, 전송 및 보유) 및 이와 관련된 사용자의 권리와 선택에 관한 자세한 사항은 개인정보 처리 방침을 참조하십시오.</p>
+                                </label>
                             </div>
-                            <label for="emailad">이메일 주소*</label>
-                            <div class="row">
-                                <input id="emailad" tabindex="1" type="email" accesskey="u" value size="25" autocomplete="off">
-                            </div>
-                            <label for="country">국가*</label>
-                            <div class="row">
-                                <input id="country" tabindex="2" type="country" value size="25" autocomplete="off">
-                            </div>
-                            <div class="clearfix">
-                                <p class="pull_left">* 필수필드</p>
-                            </div>
-                            <label for="rememberMe">
-                                <input type="checkbox" name="rememberMe" id="rememberMe" value="true" >
-                                <span>스마트워치 이용 약관과 개인정보 처리 방침에 동의하시면 체크해 주십시오. 개인정보의 처리(정보의 사용, 전송 및 보유) 및 이와 관련된 사용자의 권리와 선택에 관한 자세한 사항은 개인정보 처리 방침을 참조하십시오.</span>
-                            </label>
-                        </div>
-                        <button type="submit" class="btlogin">마이 스마트워치 가입</button>
-                    </form>
-                </div>
+                            <button type="submit" class="btlogin BTN_join">마이 스마트워치 가입</button>
+                        </form>
+                 </div>
             </div>
+            
+
         </div>
     </div>
     <div class="footer">
@@ -280,9 +328,7 @@
         <br>
         © SMART WATCH AG 2019, ALL RIGHTS RESERVED: KOREA WATCHES    
         </p>
-    </div>
-    </div>
-    
+    </div>                
 
 </body>
 </html>

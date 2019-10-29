@@ -9,7 +9,8 @@ body {
 
 #container {
     position: relative;
-    width: 100%;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 #main_header {
@@ -21,6 +22,7 @@ body {
     padding: .938em 0;
     position: fixed;
     top: 0;
+    left: 0;
     text-align: center;
     transition: background 0.5s;
 }
@@ -109,6 +111,7 @@ body {
     position: fixed;
     min-height: auto;
     top: 77px;
+    left: 0;
     width: 100%;
     margin: 0 auto;
     display: none;
@@ -180,9 +183,9 @@ body {
 .menu_watch_time_container {
     position: absolute;
     display: block;
-    width: 35%;
-    top: 110px;
-    right: -27%;
+    width: 20%;
+    top: 25%;
+    right: -20%;
 }
 
 .menu_watch_list ul li a {
@@ -207,7 +210,7 @@ body {
 
 .menu_watch_select a {
     position: absolute;
-    top: 430px;
+    top: 73%;
     left: 45%;
     font-size: 9px;
     line-height: 1;
@@ -233,53 +236,39 @@ body {
 }
 
 .login_content {
-    width: 1200px;
+    position: relative;
+    width: 70%;
     margin: 0 auto;
 }
 
 .back-img {
-    position: absolute;
+    position: fixed;
     top: 90px;
+    left: 0;
     z-index: -1;
     background-color: rgba(0, 0, 0, 0.7);
     display: none;
 }
 
 .container {
+    position: relative;
     width: 100%;
     height: auto;
-
+    z-index: 9;
 }
 
 .row1 {
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: 100px;
     z-index: 0;
     margin-left: 0;
     margin-right: 0;
 
 }
 
-.row2 {
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    top: 100px;
-    z-index: -2;
-}
-
-.row3 {
-    text-align: center;
-    
-    position: absolute;
-    z-index: -2;
-    width: 1200px;
-    height: 518px;
-    top: 400px;
-}
-
-.col_sm_22 {
-    width: 100%;
+.row1::after {
+    content: "";
+    display: block;
     clear: both;
 }
 
@@ -290,23 +279,54 @@ body {
     color: #828282;
 }
 
-.col_md_22 {
+.row2 {
+    position: relative;
     width: 100%;
+    margin-top: 100px;
+    margin-top: 200px;
+    z-index: -2;
 }
 
-.col_md_22 h1 {
+.row2 h1 {
+    width: 100%;
+    text-align: center;
     font-size: 47px;
-    margin: 100px 0 30px 160px;
+    margin: 100px auto 40px auto;
 }
 
 .subtitle {
+    width: 100%;
     font-size: 25px;
     line-height: 35px;
-    margin: 0 0 100px 265px;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.col_sm_10 {
-    _text-align: justify;
+.row3 {
+    position: relative;
+    z-index: -2;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.row3::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.login_box {
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+}
+
+.signup_box {
+    float: left;
+    width: 40%;
+    margin-left: 10%;
 }
 
 .col_sm_10 h3 {
@@ -323,9 +343,24 @@ body {
     margin: 20px 0;
 }
 
+#firstname,
+#lastname,
+#emailad,
+#country {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 0 0 20px !important;
+    border: 1px solid #e5222f;
+    background-color: #FFF;
+    color: #6e6e6e;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
 #username,
 #password {
-    width: 40%;
+    width: 100%;
     height: 50px;
     line-height: 50px;
     padding: 0 0 0 20px !important;
@@ -343,28 +378,30 @@ body {
 label {
     margin-top: 25px;
     cursor: pointer;
-    display:inline-block;
+    display: inline-block;
     font-size: 15px;
     color: #1f1f1f;
 }
+
 .clearfix {
     width: 100%;
-    margin-left: 30%;
 }
+
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
 }
+
 .clearfix p {
     float: left;
     font-size: 12px;
     color: #6e6e6e;
-    
+
 }
 
 .pull_right {
-    padding-left: 29%;
+    padding-left: 72%;
     text-decoration: underline;
 }
 
@@ -373,51 +410,99 @@ label {
     display: block;
     width: 16px;
     height: 16px;
+    margin-top: 3px;
     border: 1px solid #1f1f1f;
     background-color: #FFF;
-    
 }
 
 #rememberMe {
-    width: 1.6%;
+    width: 0.6%;
     height: 18px;
     line-height: 16px;
     margin-top: 5px;
-
 }
 
 #rememberMe:checked:after {
     content: "";
     font-family: 'FontAwesome';
 }
-label {
-    width: 40%;
-    
+
+
+#signup_terms:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #1f1f1f;
+    background-color: #FFF;
 }
-label span {
-    position: absolute;
-    padding: 5px 0 0 20px;
+
+#signup_terms {
+    width: 4%;
+    line-height: 16px;
+    margin-top: 3px;
+}
+
+#signup_terms:checked:after {
+    content: "";
+    font-family: 'FontAwesome';
+}
+
+label {
+    width: 100%;
+
+}
+
+label .rm {
+    display: inline-block;
+    width: 60%;
+
+    padding: 5px 0 0 15px;
+    margin-left: 10px;
+}
+
+label .terms {
+    float: right;
+    display: inline-block;
+    width: 93%;
     margin-left: 10px;
 }
 
 button {
-    background-color: #d5d5d5;
-    color: #1f1f1f;
+    background-color: #1f1f1f;
+    color: #d5d5d5;
     margin-bottom: 20px;
     height: 50px;
-    width: 40%;
+    width: 100%;
     line-height: 50px;
     font-size: 14px;
     font-weight: bold;
-    margin-top: 47px;
+    margin-top: 70px;
     border: 1px solid #1f1f1f;
     border-radius: 2px;
+    transition: 0.3s;
+}
+
+button.on {
+    background: #d5d5d5;
+    color: #1f1f1f;
+    transition: 1s;
+}
+
+button.on:hover {
+    border: none;
+    background: #d5d5d5;
+}
+
+button:hover {
+    background: #f9f9f9;
+    transition: 0.3s;
+    color: #1f1f1f;
 }
 
 .footer {
     background: #000;
     position: relative;
-    top: 1150px;
     text-align: center;
 }
 
@@ -440,16 +525,16 @@ button {
         display: none;
     }
 
+    .logo {
+        margin: 0 auto 0 40%;
+    }
+
     .logo_1 {
         display: none;
     }
 
     .logo_2 {
         display: block;
-    }
-
-    .sub_login {
-        right: 0;
     }
 
     .btn {
@@ -594,6 +679,9 @@ button {
         display: none;
     }
 
+    .login_content {
+        width: 80%;
+    }
 }
 
 @media all and (max-width:739px) {
@@ -627,6 +715,10 @@ button {
         width: 120px;
     }
 
+    .logo {
+        margin: 0 auto 0 40%;
+    }
+
     .logo_1 {
         display: none;
     }
@@ -634,6 +726,7 @@ button {
     .logo_2 {
         display: block;
     }
+
 
     .icon_menu {
         width: 80px;
@@ -769,7 +862,37 @@ button {
 
     /*   로그인 수정 */
 
+    .container {
+        width: 100%;
+    }
+
     .row1 {
         display: none;
     }
+    .row2 {
+        margin-top: 100px;
+    }
+    .row2 h1 {
+        width: 95%;
+        font-size: 35px;
+    }
+    .subtitle {
+        width: 95%;
+        font-size: 20px; 
+        
+    }
+    .login_box {
+        float: none;
+        width: 95%;
+        margin-left: 3%;
+    }
+    .signup_box {
+        width: 95%;
+        margin-left: 3%;
+    }
+    .login_content {
+        width: 95%;
+    }
+    
+    
 }
