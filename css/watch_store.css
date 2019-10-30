@@ -733,6 +733,14 @@ form.example::after {
     .store_text_center {
         margin-top: 18%;
     }
+    .location_img a span {
+        font-size: 12px;
+    }
+    .store_text_button {
+        width: 40%;
+        font-size: 1vw;
+        border: 10px solid red;
+    }
 }
 
 @media all and (max-width:739px) {
@@ -938,4 +946,13 @@ form.example::after {
         width: 100%;
         float: none;
     }
+    .location_img a span {
+        font-size: 10px;
+    }
+    .store_text_button {
+        font-size: 12px;
+        border: 10px solid red;
+    }
+        
+    
 }
