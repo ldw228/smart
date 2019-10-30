@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/watch_location.css">
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*서브*/
+        /*
+		nav>ul>li>ul{position:absolute; z-index:100; width:100%; left:0; top:90px;background-color:white; box-sizing:border-box;}
+        nav>ul>li>ul:after{content:"";display: block;clear: both;}
+        nav>ul>li>ul>li>a{display:block; color:#000; line-height:50px;}
+        nav>ul>li>ul>li>a:hover{color:#bbb;} 
+        nav>ul>li>ul{background-image: url(img/bg1.png); display:none;}
+*/
+    </style>
+    <script>
+        $(function() {
+
+            $(".sub_apple").hide();
+            $(".select_galaxy").click(function(e) {
+                e.preventDefault();
+                $(".sub_galaxy").fadeIn();
+                $(".sub_apple").fadeOut();
+            });
+            $(".select_apple").click(function(e) {
+                e.preventDefault();
+                $(".sub_apple").fadeIn();
+                $(".sub_galaxy").fadeOut();
+            });
+
+
+
+            var isOn = false;
+            $("nav>ul .watch").click(function() {
+                $(".sub_back").stop().slideToggle();
+
+                if (!isOn) {
+                    $(".back-img").css("display", "block");
+                    isOn = true;
+                } else {
+                    $(".back-img").css("display", "none");
+                    isOn = false;
+                }
+            });
+
+            var is = false;
+            $(".hamburger").click(function() {
+                if (!is) {
+                    $(".sub_menu_wrap").stop().animate({
+                        left: 0
+                    }, 500);
+                    is = true;
+                } else {
+                    $(".sub_menu_wrap").stop().animate({
+                        left: "-100%"
+                    }, 500);
+                    is = false;
+                }
+
+                $(this).toggleClass("is-active");
+            });
+
+
+            $(".login_list").hide().delay(50).slideDown(1000);
+            $(".BTN_login").delay(10000).addClass("on");
+            $(".join_list").hide();
+
+
+
+
+            $(".BTN_login").click(function(e) {
+                e.preventDefault();
+                $(".login_list").slideToggle();
+                $(".BTN_login").toggleClass("on");
+                $(".BTN_join").removeClass("on");
+                $(".join_list").slideUp();
+            });
+
+            $(".BTN_join").click(function(e) {
+                e.preventDefault();
+                $(".join_list").slideToggle();
+                $(".BTN_join").toggleClass("on");
+                $(".BTN_login").removeClass("on");
+                $(".login_list").slideUp();
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="main_header">
+            <div class="head_boxing">
+                <div class="three col">
+                    <div class="hamburger" id="hamburger-1">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="header_central">
+                    <nav class="mainnav">
+                        <ul class="menu">
+                            <li class="watch"><a href="#">시계</a>
+
+                            </li>
+                            <li class="partner"><a href="watch_ptnships.html">파트너십</a>
+
+                            </li>
+                            <li class="news"><a href="watch_news.html">뉴스</a></li>
+                            <li class="store"><a href="#">매장</a></li>
+                            <li class="customer"><a href="#">고객서비스</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="logo">
+                    <a href="watch.html">
+                        <img class="logo_1" src="img/logo.png" alt="logo"></a>
+                    <a href="watch.html">
+                        <img class="logo_2" src="img/logo_2.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="sub_menu_wrap">
+                <ul class="sub_menu_nav">
+                    <li><a class="sub_menu_icon sub_menu_icon1" href="">시계</a></li>
+                    <li><a class="sub_menu_icon sub_menu_icon1" href="">파트너십</a></li>
+                    <li><a class="sub_menu_icon sub_menu_icon1" href="">뉴스</a></li>
+                    <li><a class="sub_menu_icon sub_menu_icon2" href="">매장</a></li>
+                    <li><a class="sub_menu_icon sub_menu_icon1" href="">고객서비스</a></li>
+                    <li><a class="sub_menu_icon sub_menu_icon3" href="">마이 스마트워치</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="sub_back">
+            <img src="img/back_sub_nav.png" alt="">
+            <div class="menu_watch_container">
+                <h3>스마트 워치</h3>
+                <div class="menu_watch_select">
+                    <a href="watch_detail.html">모든 시계 보기</a>
+                </div>
+                <div class="sub_galaxy">
+                    <div class="menu_watch_selection">
+                        <ul class="menu_watch_seletction_list">
+                            <li>
+                                <a href="#">
+                                    <img src="img/galaxy-watch_1.png" alt="">
+                                    <span>Aqua Black</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/galaxy-watch_2.png" alt="">
+                                    <span>Pink Gold</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/galaxy-watch_3.png" alt="">
+                                    <span>Cloud Silver</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/galaxy-watch_4.png" alt="">
+                                    <span>Midnight Black</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/galaxy-watch_5.png" alt="">
+                                    <span>46㎜ Silver</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/galaxy-watch_6.png" alt="">
+                                    <span>Rose Gold</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub_apple">
+                    <div class="menu_watch_selection">
+                        <ul class="menu_watch_seletction_list menu_watch_seletction_apple">
+                            <li>
+                                <a href="#">
+                                    <img src="img/apple-watch_1.png" alt="">
+                                    <span>apple watch</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/apple-watch_2.png" alt="">
+                                    <span>apple sport</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/apple-watch_3.png" alt="">
+                                    <span>apple edition</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/apple-watch_4.png" alt="">
+                                    <span>apple watch5 orange</span>
+
+                                </a>
+                            </li>
+                            <li class="apple_blue">
+                                <a href="#">
+                                    <img src="img/apple-watch_5.png" alt="">
+                                    <span>apple watch5 blue</span>
+                                </a>
+                            </li>
+                            <li class="apple_pink">
+                                <a href="#">
+                                    <img src="img/apple-watch_6.png" alt="">
+                                    <span>apple watch5 pink</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu_watch_time_container">
+                    <h3>선택</h3>
+                    <div class="menu_watch_list">
+                        <ul>
+                            <li>
+                                <a href="#" class="select_galaxy">갤럭시 워치</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" class="select_apple">애플 워치</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login_content">
+        <div class="back-img"><img src="img/back_img.png" alt=""></div>
+        <div class="container">
+            <div class="row1">
+                <a href="watch.html" class="map">Home > </a>
+                <p class="map">Store ></p>
+            </div>
+            <div class="location_wrap">
+                <div class="location_content1">
+                    <h2 class="location_title">스마트워치 스토어 및 서비스센터</h1>
+                        <p>전 세계에서 스마트워치 스토어와 판매점을 찾아보십시오.</p>
+                        <p>스마트워치 스토어 또는 판매점을 방문하여 품질과 우아함으로 유명한 스마트워치를 만나 보십시오.</p>
+                </div>
+                <div class="location_img">
+                    <a href="watch.html"><img src="img_1/img_location.png" alt="">
+                        <span>SHOP ONLINE ></span></a>
+                </div>
+                <div class="location_content2">
+                    <h2 class="store_title">가까운 스토어</h2>
+                    <div class="store_wrap">
+                        <div class="store_wrap1">
+                            <div class="store_wrap1_top">
+                                <p class="store_text_top">신세계 강남점</p>
+                            </div>
+                            <div class="store_wrap1_bottom">
+                                <p class="store_text_center">서울특별시 서초구 반포동 신반포로 176 신세계백화점 강남점 3층</p>
+                                <a href="">
+                                    <span class="store_text_button">위치찾기</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="store_wrap2">
+                            <div class="store_wrap1_top">
+                                <p class="store_text_top">영등포 타임스퀘어점</p>
+                            </div>
+                            <div class="store_wrap1_bottom">
+                                <p class="store_text_center">서울특별시 영등포구 영중로 15 타임스퀘어 영등포점 1층</p>
+                                <a href="">
+                                    <span class="store_text_button">위치찾기</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="store_wrap3">
+                            <div class="store_wrap1_top">
+                                <p class="store_text_top">롯데에비뉴엘 소공점</p>
+                            </div>
+                            <div class="store_wrap1_bottom">
+                                <p class="store_text_center">서울특별시 중구 남대문로 81 롯데 에비뉴엘 소공점 B1층</p>
+                                <a href="">
+                                    <span class="store_text_button">위치찾기</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>상호: 스마트워치그룹코리아 (주) | 대표:이동욱 | 사업자등록번호: 010-33-97513 | 주소: 인천광역시 부평구 마장로 49 101동 |
+            <br>
+            통신판매신고번호: 2019-인천부평-5139 | 전화: 010-3397-5139 | 문의: smartwatch.online@naver.com 개인정보관리책임자: 이동욱
+            <br>
+            <br>
+            © SMART WATCH AG 2019, ALL RIGHTS RESERVED: KOREA WATCHES
+        </p>
+    </div>
+
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

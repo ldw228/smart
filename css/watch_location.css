@@ -9,7 +9,8 @@ body {
 
 #container {
     position: relative;
-    width: 100%;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 #main_header {
@@ -21,6 +22,7 @@ body {
     padding: .938em 0;
     position: fixed;
     top: 0;
+    left: 0;
     text-align: center;
     transition: background 0.5s;
 }
@@ -38,6 +40,7 @@ body {
 .logo {
     position: absolute;
     width: 20%;
+
 }
 
 .logo_1 {
@@ -50,6 +53,7 @@ body {
 
 .logo_2 {
     width: 110px;
+    margin: 0 auto;
     display: none;
 }
 
@@ -99,168 +103,6 @@ body {
     display: block;
 }
 
-.header_right {
-    position: relative;
-    margin-top: -3px;
-}
-
-.icon_menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 190px;
-}
-
-.icon_language {
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 18px;
-    display: block;
-    position: relative;
-    border: none;
-}
-
-.icon_kr {
-    width: 18px;
-    height: 18px;
-    border-radius: 36px;
-    overflow: hidden;
-    position: relative;
-    display: block;
-}
-
-.icon_kr img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 110%;
-    height: 110%;
-    transform: translateX(-52%) translateY(-50%);
-}
-
-.icon_search {
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 18px;
-    display: block;
-    position: relative;
-    border: none;
-}
-
-.icon_search:after {
-    background-image: url(../img/search.png);
-    content: " ";
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-size: 15px;
-    background-repeat: no-repeat;
-}
-
-.icon_mytag {
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 18px;
-    display: block;
-    position: relative;
-    border: none;
-}
-
-.icon_mytag:after {
-    background-image: url(../img/mytag.PNG);
-    content: " ";
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-size: 15px;
-    background-repeat: no-repeat;
-}
-
-.icon .tip {
-    top: 24px;
-    color: #b2b2b2;
-    _display: none;
-    font-size: 11px;
-    left: 50%;
-    padding: 4px 10px;
-    position: absolute;
-    text-align: center;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    z-index: 300;
-}
-
-.icon:hover > .tip {
-    color: #fff;
-}
-
-.sub_search {
-    position: absolute;
-    width: 100%;
-    top: 90px;
-    display: block;
-}
-
-form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-}
-
-form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #666;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-}
-
-form.example button:hover {
-    background: #888;
-}
-
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.sub_login {
-    top: 90px;
-    right: 1%;
-    left: auto;
-    display: block;
-    position: absolute;
-    width: 430px;
-    background-color: #FFF;
-    text-align: left;
-    border: 1px solid grey;
-}
-.nav {
-    padding: 32px 30px;
-    line-height: 30px;
-}
-.nav li a:hover {
-    font-weight: bold;
-}
-
-
-
 .sub_menu_wrap {
     display: none;
 }
@@ -269,6 +111,7 @@ form.example::after {
     position: fixed;
     min-height: auto;
     top: 77px;
+    left: 0;
     width: 100%;
     margin: 0 auto;
     display: none;
@@ -392,130 +235,158 @@ form.example::after {
     font-weight: bold;
 }
 
-.ftn_content {
-    width: 100%;
+.login_content {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .back-img {
-    position: absolute;
+    position: fixed;
     top: 90px;
-    z-index: 4;
+    left: 0;
+    z-index: -1;
     background-color: rgba(0, 0, 0, 0.7);
     display: none;
 }
 
 .container {
     position: relative;
-
-    width: 1200px;
-    margin-left: 20%;
-    z-index: 3;
+    width: 90%;
+    height: auto;
+    z-index: 9;
+    margin: 0 auto;
 }
-
 .row1 {
-    position: absolute;
-    top: 0;
-    margin-top: 100px;
+    position: relative;
+    top: 100px;
     z-index: 0;
     margin-left: 0;
     margin-right: 0;
 }
-
-.col_sm_22 {
-    width: 100%;
+.row1::after {
+    content: "";
+    display: block;
     clear: both;
-    position: fixed;
-
 }
-
 .map {
     float: left;
     padding-left: 10px;
     font-size: 15px;
     color: #828282;
 }
-
-.content_news {
+.location_wrap {
+    position: relative;
     width: 100%;
-    height: auto;
-    padding-bottom: 20%;
-    background: url(../img_1/backimg.png)no-repeat 0 0;
-    background-attachment: fixed;
-    background-size: cover;
+    margin: 100px auto;
+}
+.location_content1 {
+    line-height: 30px;
+}
+.location_title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.location_img a img {
+    width: 100%;
+    padding: 5% 0;
+    border-bottom: 1px solid #c8c8c8;
+}
+.location_img a span {
+    position: absolute;
+    left: 23%;
+    margin-top: 8.5%;
+    color: #f9f9f9;
+    font-size: 0.8vw;
+    font-weight: bold;
+    border: 1vw solid red;
+    background-color: red;
+}
+.location_img a span:hover {
+    border: 1vw solid #000;
+    background-color: #000;
+}
+.store_title {
+    margin: 5% 0 2% 0;
+}
+.store_wrap {
+    position: relative;
+    width: 100%;
 }
 
-.news_wrap {
+.store_wrap1 {
+    width: 30%;
+    height: 230px; 
+    border: 1px solid #c8c8c8;
+    box-shadow: 2px 2px 2px 2px #c8c8c8;
+    float: left;
+}
+.store_wrap1_top {
+    background: #000;
+    width: 100%;
+    height: 70px;
+}
+.store_text_top {
+    color: #fff;
+    text-align: center;
+    padding-top: 8%;
+    font-weight: bold;
+}
+.store_wrap1_bottom {
     position: relative;
-    max-width: 1440px;
+    width: 100%;
+    height: 50%;
+}
+.store_text_button:hover {
+    border: 0.3vw solid #000;
+    background-color: #000;
+}
+.store_text_center {
+    color: #000;
+    
+    text-align: center;
+    margin-top: 12%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.store_wrap1_bottom a {
+    width: 100%;
     margin: 0 auto;
 }
-.news_box_sm {
-    display: none;
-}
-
-.news1 {
-    padding-top: 15%;
-    padding-bottom: 12%;
+.store_text_button {
+    position: absolute;
     text-align: center;
-    display: none;
+    width: 30%;
+    left: 35%;
+    margin-top: 7%;
+    color: #f9f9f9;
+    font-size: 0.8vw;
+    font-weight: bold;
+    border: 0.3vw solid red;
+    background-color: red;
 }
 
-.news1 img {
-    border: 2px solid #888;
+.store_wrap::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
-.news2 {
-    position: relative;
-    padding-bottom: 12%;
-    opacity: 0;
+.store_wrap2 {
+    width: 30%;
+    height: 230px; 
+    border: 1px solid #c8c8c8;
+    box-shadow: 2px 2px 2px 2px #c8c8c8;
+    float: left;
+    margin-left: 5%;
 }
-
-.news3 {
-    position: absolute;
-    right: 0;
-    top: 28%;
-    opacity: 0;
+.store_wrap3 {
+    width: 30%;
+    height: 230px; 
+    border: 1px solid #c8c8c8;
+    box-shadow: 2px 2px 2px 2px #c8c8c8;
+    float: right;
 }
-
-.news4 {
-    position: relative;
-    padding-bottom: 12%;
-    opacity: 0;
-}
-
-.news5 {
-    position: absolute;
-    right: 0;
-    top: 48.5%;
-    opacity: 0;
-}
-
-.news6 {
-    position: relative;
-    padding-bottom: 12%;
-    opacity: 0;
-}
-
-.news7 {
-    position: absolute;
-    right: 0;
-    top: 69%;
-    opacity: 0;
-}
-
-.news8 {
-    position: relative;
-    padding-bottom: 12%;
-    opacity: 0;
-}
-
-.news9 {
-    position: absolute;
-    right: 0;
-    top: 90%;
-    opacity: 0;
-}
-
 .footer {
     background: #000;
     position: relative;
@@ -523,33 +394,8 @@ form.example::after {
 }
 
 .footer p {
-    width: 100%;
     padding: 30px 0 30px 0;
     color: #bbb;
-}
-
-.slide_up {
-    height: 70px;
-    border-top: 1px solid #454545;
-}
-
-.slide_up img {
-    width: 30px;
-    margin-top: 30px;
-}
-
-.slide_up img {
-    animation: slide-top 1s cubic-bezier(.25, .46, .45, .94) infinite reverse both
-}
-
-@keyframes slide-top {
-    0% {
-        transform: translateY(0)
-    }
-
-    100% {
-        transform: translateY(-20px)
-    }
 }
 
 
@@ -567,7 +413,7 @@ form.example::after {
     }
 
     .logo {
-        margin: 0 auto 0 35%;
+        margin: 0 auto 0 40%;
     }
 
     .logo_1 {
@@ -576,10 +422,6 @@ form.example::after {
 
     .logo_2 {
         display: block;
-    }
-
-    .sub_login {
-        right: 0;
     }
 
     .btn {
@@ -603,9 +445,8 @@ form.example::after {
     }
 
     .header_right {
-        width: 100%;
         position: relative;
-        margin-left: 90%;
+        right: -30px;
     }
 
     #main_header {
@@ -719,69 +560,9 @@ form.example::after {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    /*    뉴스 수정*/
+    /*   로그인 수정 */
 
-    .row1 {
-        display: none;
-    }
-    .news_box {
-        display: none;
-    }
-    .news_box_sm {
-        display: block;
-    }
-    #news1 {
-    padding-top: 15%;
-    padding-bottom: 12%;
-    text-align: center;
-    }
-    #news1 img {
-        border: 2px solid #888;
-    }
-    #news2 {
-        position: relative;
-        padding-bottom: 12%;
-        width: 50%;
-    }
-    #news3 {
-        position: absolute;
-        right: 0;
-        top: 28%;
-        width: 50%;
-     }
-    #news4 {
-        position: relative;
-        padding-bottom: 12%;
-        width: 50%;
-    }
-    #news5 {
-        position: absolute;
-        right: 0;
-        top: 48.5%;
-        width: 50%;
-     }
-    #news6 {
-        position: relative;
-        padding-bottom: 12%;
-        width: 50%;
-     }
-    #news7 {
-        position: absolute;
-        right: 0;
-        top: 69%;
-        width: 50%;
-     }
-    #news8 {
-        position: relative;
-        padding-bottom: 12%;
-        width: 50%;
-     }
-    #news9 {
-        position: absolute;
-        right: 0;
-        top: 90%;
-        width: 50%;
-     }
+    
 }
 
 @media all and (max-width:739px) {
@@ -803,10 +584,6 @@ form.example::after {
         display: none;
     }
 
-    .logo {
-        margin: 0 auto 0 35%;
-    }
-
     .sub_login {
         right: 0;
     }
@@ -819,6 +596,10 @@ form.example::after {
         width: 120px;
     }
 
+    .logo {
+        margin: 0 auto 0 40%;
+    }
+
     .logo_1 {
         display: none;
     }
@@ -826,6 +607,7 @@ form.example::after {
     .logo_2 {
         display: block;
     }
+
 
     .icon_menu {
         width: 80px;
@@ -844,9 +626,8 @@ form.example::after {
     }
 
     .header_right {
-        width: 100%;
         position: relative;
-        margin-left: 88%;
+        right: -30px;
     }
 
     #main_header {
@@ -863,7 +644,6 @@ form.example::after {
         top: 50px;
         background: #fff;
     }
-
 
     .sub_menu_nav {
         padding-bottom: 20px;
@@ -961,73 +741,9 @@ form.example::after {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    /*    뉴스 수정*/
+    /*   로그인 수정 */
 
-    .row1 {
-        display: none;
-    }
-    .news_box {
-        display: none;
-    }
-    .news_box_sm {
-        display: block;
-    }
-    #news1 {
-    padding-top: 15%;
-    padding-bottom: 12%;
-    text-align: center;
-    }
-    #news1 img {
-        border: 2px solid #888;
-        width: 60%;
-    }
-    #news2 {
-        position: relative;
-        padding-bottom: 2%;
-        width: 90%;
-        margin-left: 5%;
-        
-    }
-    #news3 {
-        position: relative;
-        padding-bottom: 2%;
-        width: 90%;
-        margin-left: 5%;
-     }
-    #news4 {
-        position: relative;
-        padding-bottom: 2%;
-        width: 90%;
-        margin-left: 5%;
-    }
-    #news5 {
-        position: relative;
-        padding-bottom: 2%;
-        width: 90%;
-        margin-left: 5%;
-     }
-    #news6 {
-        position: relative;
-        padding-bottom: 2%;
-        width: 90%;
-        margin-left: 5%;
-     }
-    #news7 {
-        position: relative;
-        padding-bottom: 2%;
-        width: 90%;
-        margin-left: 5%;
-     }
-    #news8 {
-        position: relative;
-        padding-bottom: 2%;
-        width: 90%;
-        margin-left: 5%;
-     }
-    #news9 {
-        position: relative;
-        padding-bottom: 2%;
-        width: 90%;
-        margin-left: 5%;
-     }
+    
+    
+    
 }

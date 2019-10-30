@@ -680,7 +680,7 @@ button:hover {
     }
 
     .login_content {
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -875,6 +875,9 @@ button:hover {
     .row2 h1 {
         width: 95%;
         font-size: 35px;
+    }
+    .row3 {
+        margin-top: 100px;
     }
     .subtitle {
         width: 95%;
