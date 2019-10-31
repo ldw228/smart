@@ -237,7 +237,7 @@ body {
 
 .login_content {
     position: relative;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -275,122 +275,91 @@ body {
     font-size: 15px;
     color: #828282;
 }
-.location_wrap {
+.nav_line {
     position: relative;
+    top: 110px;
     width: 100%;
-    margin: 100px auto;
+    border-top: 1px solid #828282;
+    border-bottom: 1px solid #828282;
+    font-family: 'Roboto', sans-serif;
 }
-.location_content1 {
-    line-height: 30px;
+.nav_line h2 {
+    font-size: 20px;
+    margin: 20px 0 20px 14.5%;
 }
-.location_title {
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-.location_img a img {
-    width: 100%;
-    padding: 5% 0;
-    border-bottom: 1px solid #c8c8c8;
-}
-.location_img a span {
-    position: absolute;
-    left: 23%;
-    margin-top: 8.5%;
-    color: #f9f9f9;
-    font-size: 0.8vw;
-    font-weight: bold;
-    border: 1vw solid red;
-    background-color: red;
-}
-.location_img a span:hover {
-    border: 1vw solid #000;
-    background-color: #000;
-}
-.store_title {
-    margin: 5% 0 2% 0;
-}
-.store_wrap {
+.watch_map {
     position: relative;
-    width: 100%;
+    max-width: 1400px;
+    margin: 180px auto 250px auto;
 }
-
-.store_wrap1 {
-    width: 30%;
-    height: 230px; 
-    border: 1px solid #c8c8c8;
-    box-shadow: 2px 2px 2px 2px #c8c8c8;
-    float: left;
-}
-.store_wrap1_top {
-    background: #000;
-    width: 100%;
-    height: 70px;
-}
-.store_text_top {
-    color: #fff;
-    text-align: center;
-    padding-top: 8%;
-    font-weight: bold;
-}
-.store_wrap1_bottom {
-    position: relative;
-    width: 100%;
-    height: 50%;
-}
-.store_text_button:hover {
-    border: 0.3vw solid #000;
-    background-color: #000;
-}
-.store_text_center {
-    color: #000;
-    
-    text-align: center;
-    margin-top: 12%;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-.store_wrap1_bottom a {
-    width: 100%;
-    margin: 0 auto;
-}
-.store_text_button {
-    position: absolute;
-    text-align: center;
-    width: 30%;
-    left: 35%;
-    margin-top: 7%;
-    color: #f9f9f9;
-    font-size: 0.8vw;
-    font-weight: bold;
-    border: 0.3vw solid red;
-    background-color: red;
-}
-
-.store_wrap::after {
+.watch_map::after {
     content: "";
     display: block;
     clear: both;
 }
-
-.store_wrap2 {
-    width: 30%;
-    height: 230px; 
-    border: 1px solid #c8c8c8;
-    box-shadow: 2px 2px 2px 2px #c8c8c8;
+.map_text {
+    width: 28%;
     float: left;
-    margin-left: 5%;
 }
-.store_wrap3 {
-    width: 30%;
-    height: 230px; 
-    border: 1px solid #c8c8c8;
-    box-shadow: 2px 2px 2px 2px #c8c8c8;
+.map_text1 {
+    position: relative;
+    transition: all 1s;
+    background: #e4e4e4;
+    padding: 30px 30px 30px 20px;
+}
+
+.map_text2 {
+    position: relative;
+    transition: all 1s;
+    background: #e4e4e4;
+    padding: 30px 30px 30px 20px;
+    margin-top: 30px;
+}
+.map_text2:hover {
+    background: #ececec;
+}
+.map_text3 {
+    position: relative;
+    transition: all 1s;
+    background: #e4e4e4;
+    padding: 30px 30px 30px 20px;
+    margin-top: 30px;
+}
+.map_text3:hover {
+    background: #ececec;
+}
+.map_text_top {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.map_text_ad {
+    color: #828282;
+        
+}
+.map_iframe3 {
+    width: 70%;
     float: right;
+    position: absolute;
+    padding-left: 28px;
+}
+.map_iframe2 {
+    width: 70%;
+    float: right;
+    position: absolute;
+    padding-left: 28px;
+}
+.map_iframe1 {
+    position: absolute;
+    width: 70%;
+    float: right;
+    padding-left: 28px;
 }
 .footer {
     background: #000;
     position: relative;
     text-align: center;
+    
 }
 
 .footer p {
@@ -560,9 +529,17 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    /*   로그인 수정 */
-
+    /*   로캐이션 수정 */
     
+    .row1 {
+        display: none;
+    }
+    .nav_line {
+        top: 90px;
+    }
+    .watch_map {
+        margin: 150px auto 350px auto;
+    }
 }
 
 @media all and (max-width:739px) {
@@ -741,9 +718,42 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    /*   로그인 수정 */
-
+    /*   로캐이션 수정 */
     
-    
-    
+    .row1 {
+        display: none;
+    }
+    .watch_map {
+        margin: 150px auto 350px auto;
+    }
+    .map_text_ad {
+        display: none;
+    }
+    .map_text_top {
+        font-size: 15px;
+    }
+    .map_text1 {
+        padding: 20px 10px 20px 10px;
+    }
+    .map_text2 {
+        padding: 20px 10px 20px 10px;
+    }
+    .map_text3 {
+        padding: 20px 10px 20px 10px;
+    }
+    .map_iframe3 {
+        
+        padding-left: 8px;
+    }
+    .map_iframe2 {
+        
+        padding-left: 8px;
+    }
+    .map_iframe1 {
+        
+        padding-left: 8px;
+    }
+    .nav_line {
+        top: 90px;
+    }
 }

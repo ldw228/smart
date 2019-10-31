@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/watch_location.css">
     <script src="js/prefixfree.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         /*서브*/
@@ -22,6 +23,44 @@
     <script>
         $(function() {
 
+            var temp = location.href.split("?");
+            data = temp[1];
+            
+            console.log("data[0] :" + data[0]);
+            if (data == 1){
+                $(".map_iframe1").show();
+                $(".map_iframe2").hide(); 
+                $(".map_iframe3").hide();
+                $(".map_text1").css("left","8%");
+                $(".map_text2").css("left","0");
+                $(".map_text3").css("left","0");
+                $(".map_text1").css("background","#e9d6c0");
+                $(".map_text2").css("background","#ececec");
+                $(".map_text3").css("background","#ececec"); 
+            }
+            if (data == 2){
+                $(".map_iframe2").show();
+                $(".map_iframe3").hide();
+                $(".map_iframe1").hide(); 
+                $(".map_text2").css("left","8%");
+                $(".map_text1").css("left","0");
+                $(".map_text3").css("left","0");
+                $(".map_text2").css("background","#e9d6c0");
+                $(".map_text3").css("background","#ececec");
+                $(".map_text1").css("background","#ececec"); 
+            }
+            if (data == 3){
+                $(".map_iframe1").hide();
+                $(".map_iframe2").hide(); 
+                $(".map_iframe3").show();
+                $(".map_text3").css("left","8%");
+                $(".map_text1").css("left","0");
+                $(".map_text2").css("left","0");
+                $(".map_text3").css("background","#e9d6c0");
+                $(".map_text2").css("background","#ececec");
+                $(".map_text1").css("background","#ececec"); 
+            }
+            
             $(".sub_apple").hide();
             $(".select_galaxy").click(function(e) {
                 e.preventDefault();
@@ -89,7 +128,42 @@
                 $(".BTN_login").removeClass("on");
                 $(".login_list").slideUp();
             });
-
+            $(".map_text2").click(function(){
+                $(".map_iframe2").show();
+                $(".map_iframe3").hide();
+                $(".map_iframe1").hide(); 
+                $(".map_text2").css("left","8%");
+                $(".map_text1").css("left","0");
+                $(".map_text3").css("left","0");
+                $(".map_text2").css("background","#e9d6c0");
+                $(".map_text3").css("background","#ececec");
+                $(".map_text1").css("background","#ececec");
+                    
+            });
+            $(".map_text3").click(function(){
+                $(".map_iframe1").hide();
+                $(".map_iframe2").hide(); 
+                $(".map_iframe3").show();
+                $(".map_text3").css("left","8%");
+                $(".map_text1").css("left","0");
+                $(".map_text2").css("left","0");
+                $(".map_text3").css("background","#e9d6c0");
+                $(".map_text2").css("background","#ececec");
+                $(".map_text1").css("background","#ececec");
+            });
+            $(".map_text1").click(function(){
+                $(".map_iframe1").show();
+                $(".map_iframe2").hide(); 
+                $(".map_iframe3").hide();
+                $(".map_text1").css("left","8%");
+                $(".map_text2").css("left","0");
+                $(".map_text3").css("left","0");
+                $(".map_text1").css("background","#e9d6c0");
+                $(".map_text2").css("background","#ececec");
+                $(".map_text3").css("background","#ececec");
+                
+            }); 
+            
         });
     </script>
 
@@ -255,61 +329,33 @@
             <div class="row1">
                 <a href="watch.html" class="map">Home > </a>
                 <p class="map">Store ></p>
+                <p class="map">Location ></p>
             </div>
-            <div class="location_wrap">
-                <div class="location_content1">
-                    <h2 class="location_title">스마트워치 스토어 및 서비스센터</h1>
-                        <p>전 세계에서 스마트워치 스토어와 판매점을 찾아보십시오.</p>
-                        <p>스마트워치 스토어 또는 판매점을 방문하여 품질과 우아함으로 유명한 스마트워치를 만나 보십시오.</p>
-                </div>
-                <div class="location_img">
-                    <a href="watch.html"><img src="img_1/img_location.png" alt="">
-                        <span>SHOP ONLINE ></span></a>
-                </div>
-                <div class="location_content2">
-                    <h2 class="store_title">가까운 스토어</h2>
-                    <div class="store_wrap">
-                        <div class="store_wrap1">
-                            <div class="store_wrap1_top">
-                                <p class="store_text_top">신세계 강남점</p>
-                            </div>
-                            <div class="store_wrap1_bottom">
-                                <p class="store_text_center">서울특별시 서초구 반포동 신반포로 176 신세계백화점 강남점 3층</p>
-                                <a href="">
-                                    <span class="store_text_button">위치찾기</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="store_wrap2">
-                            <div class="store_wrap1_top">
-                                <p class="store_text_top">영등포 타임스퀘어점</p>
-                            </div>
-                            <div class="store_wrap1_bottom">
-                                <p class="store_text_center">서울특별시 영등포구 영중로 15 타임스퀘어 영등포점 1층</p>
-                                <a href="">
-                                    <span class="store_text_button">위치찾기</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="store_wrap3">
-                            <div class="store_wrap1_top">
-                                <p class="store_text_top">롯데에비뉴엘 소공점</p>
-                            </div>
-                            <div class="store_wrap1_bottom">
-                                <p class="store_text_center">서울특별시 중구 남대문로 81 롯데 에비뉴엘 소공점 B1층</p>
-                                <a href="">
-                                    <span class="store_text_button">위치찾기</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
+          </div>
     </div>
-
+    <div class="nav_line"><h2>FIND STORE</h2></div>
+    <div class="watch_map">
+        <div class="map_text">
+            <div class="map_text1">
+                <a href="#"><p class="map_text_top">신세계백화점 강남점</p>
+                    <p class="map_text_ad">서울특별시 서초구 반포동 신반포로176</p>
+                    <p class="map_text_ad">1588-1234</p></a>
+            </div>
+            <div class="map_text2">
+                <a href="#"><p class="map_text_top">타임스퀘어 영등포점</p>
+                    <p class="map_text_ad">서울특별시 영등포구 영중로 15 </p>
+                    <p class="map_text_ad">02-2638-2000</p></a>
+            </div>
+            <div class="map_text3">
+                <a href="#"><p class="map_text_top">롯데백화점 에비뉴엘 본점</p>
+                    <p class="map_text_ad">서울특별시 중구 남대문로 73</p>
+                    <p class="map_text_ad">02-771-2500</p></a>
+            </div>
+        </div>
+        <iframe class="map_iframe3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.6044905774434!2d126.97579681544191!3d37.564381082009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f1f9155af7%3A0x77d801cbcd221ab4!2z66Gv642w67Cx7ZmU7KCQIOuzuOygkA!5e0!3m2!1sko!2skr!4v1572491429102!5m2!1sko!2skr" width="600" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe class="map_iframe2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.5711658388236!2d126.90206431544094!3d37.51803123466203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9efb41e0a027%3A0x71dca1cbc9866ac1!2z7YOA7J6E7Iqk7YCY7Ja0!5e0!3m2!1sko!2skr!4v1572491087197!5m2!1sko!2skr" width="600" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe class="map_iframe1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1606563235946!2d127.0008966157913!3d37.50412883545646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1780001aa3d%3A0xe968dbc71dc9a2c3!2z7Iug7IS46rOE67Cx7ZmU7KCQIOqwleuCqOygkA!5e0!3m2!1sko!2skr!4v1572485470719!5m2!1sko!2skr" width="600" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
     <div class="footer">
         <p>상호: 스마트워치그룹코리아 (주) | 대표:이동욱 | 사업자등록번호: 010-33-97513 | 주소: 인천광역시 부평구 마장로 49 101동 |
             <br>
