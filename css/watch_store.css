@@ -499,7 +499,7 @@ form.example::after {
     height: 50%;
 }
 .store_text_button:hover {
-    border: 0.3vw solid #000;
+    border: 0.5vw solid #000;
     background-color: #000;
 }
 .store_text_center {
@@ -740,7 +740,12 @@ form.example::after {
         width: 40%;
         font-size: 1vw;
         border: 10px solid red;
+        left: 32%;
     }
+    .store_text_button:hover {
+        border: 10px solid #000;
+        background-color: #000;
+}    
 }
 
 @media all and (max-width:739px) {
@@ -931,6 +936,9 @@ form.example::after {
     .container {
         width: 100%;
     }
+    .store_title {
+        margin: 10% 0 5% 0;
+    }
     .store_wrap1 {
         width: 100%;
         float: none;
@@ -949,10 +957,16 @@ form.example::after {
     .location_img a span {
         font-size: 10px;
     }
+    .location_img a img {
+        padding: 5% 0 10% 0;
+    }
     .store_text_button {
         font-size: 12px;
         border: 10px solid red;
     }
-        
+    .store_text_button:hover {
+        border: 10px solid #000;
+        background-color: #000;
+}    
     
 }
