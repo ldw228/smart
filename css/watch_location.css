@@ -540,6 +540,18 @@ body {
     .watch_map {
         margin: 150px auto 350px auto;
     }
+    .map_iframe3 {
+        
+        padding-left: 22px;
+    }
+    .map_iframe2 {
+        
+        padding-left: 22px;
+    }
+    .map_iframe1 {
+        
+        padding-left: 22px;
+    }
 }
 
 @media all and (max-width:739px) {
