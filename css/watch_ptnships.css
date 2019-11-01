@@ -470,14 +470,14 @@ form.example::after {
 }
 
 .ftn_text1 {
+    width: 100%;
     position: relative;
     display: block;
-    margin: 0 0 auto 30px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 17px;
     color: #212121;
-    padding: 0;
-    max-width: 1100px;
+    padding: 10px;;
+    
 }
 
 .pictures {
@@ -488,7 +488,7 @@ form.example::after {
     max-width: 1200px;
     padding: 1% 2.5%;
     text-transform: uppercase;
-    text-align: center;
+    
 }
 
 .pictures li {
@@ -513,6 +513,7 @@ form.example::after {
     padding: 0 10px;
     font-size: 13px;
     color: #fff;
+    text-align: center;
 }
 
 .img_text2 {
@@ -521,6 +522,7 @@ form.example::after {
     top: 10%;
     font-size: 13px;
     color: #fff;
+    text-align: center;
 }
 
 .img_text3 {
@@ -529,6 +531,7 @@ form.example::after {
     width: 100%;
     font-size: 13px;
     color: #fff;
+    text-align: center;
 }
 
 .img_text4 {
@@ -537,6 +540,7 @@ form.example::after {
     width: 100%;
     font-size: 13px;
     color: #fff;
+    text-align: center;
 }
 
 .img_text5 {
@@ -545,6 +549,7 @@ form.example::after {
     width: 100%;
     font-size: 13px;
     color: #fff;
+    text-align: center;
 }
 
 .footer {
@@ -920,20 +925,28 @@ form.example::after {
     
     /*    파트너십 수정*/
 
-    .container {
-        _max-width: 1000px;
+    .ptnships {
+        top: 100px;
         
     }
     .row1 {
         display: none;
     }
     .ptnships h1 {
-        font-size: 40px;
+        font-size: 30px;
+        margin-bottom: 50px;
     }
     .ftn_text {
         width: 80%;
         margin-left: 10%;
         font-size: 13px;
+    }
+    .ftn_imgs {
+        top: 150px;
+        
+    }
+    .footer {
+        top: 250px;
     }
     
 }

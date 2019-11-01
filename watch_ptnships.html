@@ -10,6 +10,8 @@
     <script src="js/prefixfree.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/aos.js"></script>
+    <link href="css/aos.css" rel="stylesheet">
     <style>
         /*서브*/
         /*
@@ -89,7 +91,15 @@
                 $(this).toggleClass("is-active");
             });
         });
-
+    </script>
+    <script>
+        $(function(){
+            AOS.init({
+            easing: 'zoom-in-up',
+            offset: 0,
+            duration: 1000,
+            });
+        });
     </script>
 
 </head>
@@ -299,23 +309,23 @@
                         <p class="map">Partner Ships </p>
                     </div>
                 </div>
-                <div class="ptnships">
+                <div class="ptnships" data-aos="zoom-in">
                     <h1>스마트워치 세계</h1>
                     <p class="ftn_text">긴 시간 스마트 워치는 가장 높은 산의 정상부터 가장 깊은 바닷속까지 탐험하는 전 세계의 탐험가들 및 도전하며 성취하는 전문가들과 함께 했습니다. 오늘날 스마트 워치는 전 세계의 정상급 스포츠 이벤트인 골프를 비롯해 요트, 테니스, 모터 스포츠, 승마 등의 행사를 후원합니다. 스마트 워치는 전 세계의 문화, 과학 및 탐험 발전에 특별하고 지속적인 기여를 하고 있습니다. </p>
                 </div>
                 <div class="ftn_imgs">
-                    <p class="ftn_text1">스마트워치와 스포츠</p>
                     <ul class="pictures">
-                        <li>
+                        <li data-aos="zoom-in-up" data-aos-delay="200">
+                           <p class="ftn_text1">스마트워치와 스포츠</p>
                             <a href="#">
                                 <picture class="ftn_img"><img src="img/tennis.jpg" alt="">
                                 </picture>
                                 <div class="img_text1">
-                                    <h2>스마트워치와 테니스</h2>
+                                    <h2 >스마트워치와 테니스</h2>
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li data-aos="zoom-in-up" data-aos-delay="400">
                             <a href="#">
                                 <picture class="ftn_img a1"><img src="img/riding.jpg" alt="">
                                 </picture>
@@ -324,7 +334,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li data-aos="zoom-in-up" data-aos-delay="600">
                             <a href="#">
                                 <picture class="ftn_img a1"><img src="img/golf.jpg" alt="">
                                 </picture>
@@ -333,7 +343,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li data-aos="zoom-in-up" data-aos-delay="800">
                             <a href="#">
                                 <picture class="ftn_img a1"><img src="img/motor-sports.webp" alt="">
                                 </picture>
@@ -342,7 +352,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li data-aos="zoom-in-up" data-aos-delay="1000">
                             <a href="#">
                                 <picture class="ftn_img a1"><img src="img/yacht.jpg" alt="">
                                 </picture>

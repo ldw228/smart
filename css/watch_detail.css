@@ -454,7 +454,7 @@ form.example::after {
 .dt_tex_line {
     width: 50%;
     margin: 0 auto;
-    border-top: 1px solid #000;
+    border-top: 1px solid #828282;
     padding-bottom: 5%;
 }
 
@@ -915,7 +915,7 @@ form.example::after {
     }
 
     .dt_txt {
-        font-size: 23px;
+        font-size: 20px;
         margin-top: 10%;
         margin-left: auto;
         margin-right: auto;
