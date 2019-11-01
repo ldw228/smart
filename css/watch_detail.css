@@ -481,11 +481,11 @@ form.example::after {
     margin-bottom: 50px;
     margin-right: 3px;
 }
-.dt_item1, .dt_item3, .dt_item5, .dt_item7, .dt_item9, .dt_item11 {
+.dt_item1, .dt_item4, .dt_item5, .dt_item8, .dt_item9, .dt_item12 {
     background-color: #f4f4f4;
 }
-.dt_item2, .dt_item4, .dt_item6, .dt_item8, .dt_item10, .dt_item12 {
-    background-color: #f3e9d4;
+.dt_item2, .dt_item3, .dt_item6, .dt_item7, .dt_item10, .dt_item11 {
+    background-color: #e0e0e0;
 }
 .dt_box {
     font-weight: 400;
