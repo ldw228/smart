@@ -456,6 +456,7 @@ form.example::after {
     margin: 0 auto;
     border-top: 1px solid #000;
     padding-bottom: 5%;
+    overflow: hidden;
 }
 
 .dt_item {
@@ -827,19 +828,16 @@ form.example::after {
     .dt_txt {
         font-size: 30px;
     }
-
+    .dt_txt_line {
+        width: 100%;
+    }
     .dt_item {
         width: 100%;
-        
-        
     }
-
     .dt_all {
         width: 49%;
         padding: 5% 15%;
-        
     }
-
     #dt_box {
         margin-top: 14px;
     }
@@ -919,7 +917,9 @@ form.example::after {
     .dt_item {
         width: 100%;
     }
-
+    .dt_txt_line {
+        width: 100%;
+    }
     .sub_menu_wrap {
         display: block;
         position: absolute;
