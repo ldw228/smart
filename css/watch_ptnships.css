@@ -52,9 +52,11 @@ body {
 }
 
 .header_central {
-    position: absolute;
-    width: 88%;
+    position: relative;
+    width: 100%;
+    margin-left: 10%;
 }
+
 
 .mainnav {
     height: auto;
