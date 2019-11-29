@@ -37,7 +37,8 @@ body {
 
 .logo {
     position: absolute;
-    width: 20%;
+    width: 100%;
+    left: 8%;
 }
 
 .logo_1 {
@@ -54,8 +55,9 @@ body {
 }
 
 .header_central {
-    position: absolute;
-    width: 88%;
+    position: relative;
+    width: 100%;
+    margin-left: 10%;
 }
 
 .mainnav {

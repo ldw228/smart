@@ -594,9 +594,7 @@ form.example::after {
     .btn {
         display: block;
     }
-    .icon_menu {
-        width: 120px;
-    }
+    
     .logo_1 {
         display: none;
     }
@@ -604,7 +602,7 @@ form.example::after {
         display: block;
     }
     .icon_menu {
-        width: 80px;
+        width: 75px;
         margin: 0;
     }
     .icon_mytag:after {
@@ -618,7 +616,7 @@ form.example::after {
     .header_right {
         width: 100%;
         position: relative;
-        margin-left: 88%;
+        margin-left: 75%;
     }
     #main_header {
         height: 50px;
