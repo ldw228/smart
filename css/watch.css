@@ -436,10 +436,7 @@ form.example::after {
     .btn {
         display: block;
     }
-    .icon_menu {
-        width: 110px;
-        float: right;
-    }
+    
     .icon_mytag:after {
         background-image: none;
     }
@@ -452,6 +449,10 @@ form.example::after {
     }
     .logo_2 {
         display: block;
+    }
+    .icon_menu {
+        width: 110px;
+        float: right;
     }
     .header_right {
         width: 100%;
@@ -586,7 +587,7 @@ form.example::after {
         display: none;
     }
     .logo {
-        margin: 0 auto 0 35%;
+        margin: 0 auto 0 34%;
     }
     .sub_login {
         right: 0;
@@ -601,10 +602,7 @@ form.example::after {
     .logo_2 {
         display: block;
     }
-    .icon_menu {
-        width: 75px;
-        margin: 0;
-    }
+    
     .icon_mytag:after {
         background-image: none;
     }
@@ -612,6 +610,10 @@ form.example::after {
     }
     .sub_search {
         top: 50px;
+    }
+    .icon_menu {
+        width: 75px;
+        margin: 0;
     }
     .header_right {
         width: 100%;
